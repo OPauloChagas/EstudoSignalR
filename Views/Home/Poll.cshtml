@@ -1,0 +1,39 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            Usuário: <input type="text" id="userInput" />
+        </div>
+        <div class="col-6">&nbsp;</div>
+    </div>
+    <div class="row">Votação: Qual a melhor Empanada de São Paulo</div>
+    <br /><span id=""></span><br />
+    <div class="row">
+        <div class="col-12">
+
+            <input type="radio" name="myChannel" id="laEmpanada" value=" La Empanada Chilena" />
+            <label for="captionMarvel">La Empanada Chilena</label>
+            <br /><span id="laempanadaX"></span><br />
+
+            <input type="radio" name="myChannel" id="laChica" value=" La Chica" />
+            <label for="captionMarvel2">La Chica</label>
+            <br /><span id=""></span><br />
+
+            <input type="radio" name="myChannel" id="naoPossui" value="Eu não sei" />
+            <label for="captionMarvel3">Não sei...</label>
+            <br /><span id=""></span><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input type="button" id="sendButton" value="Vote Agora" />
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/poll.js"></script>
